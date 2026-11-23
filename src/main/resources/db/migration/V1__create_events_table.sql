@@ -1,0 +1,1 @@
+CREATE TABLE events( id BIGINT AUTO_INCREMENT PRIMARY KEY, title VARCHAR(200) NOT NULL , description VARCHAR(2000) , venue VARCHAR(200) , start_time DATETIME(6) NOT NULL , capacity INT NOT NULL , price DECIMAL(10.2) NOT NULL , CONSTRAINT chk_events_capacity CHECK (capacity > 0), CONSTRAINT chk_events_price CHECK(price >= 0))
