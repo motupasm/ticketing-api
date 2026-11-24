@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.motupa.ticketing.EventRequest;
-import com.motupa.ticketing.EventResponse;
+import com.motupa.ticketing.request.EventRequest;
+import com.motupa.ticketing.response.EventResponse;
 import com.motupa.ticketing.service.EventService;
 
 import jakarta.validation.Valid;
@@ -36,7 +36,6 @@ public class EventController {
     public EventResponse get(@PathVariable Long id) {
         return eventService.findById(id);
     }
-
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
     public EventResponse create(@Valid @RequestBody EventRequest request) {

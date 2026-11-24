@@ -5,11 +5,11 @@ import java.util.List;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.motupa.ticketing.EventRequest;
-import com.motupa.ticketing.EventResponse;
 import com.motupa.ticketing.entity.Event;
 import com.motupa.ticketing.exception.EventNotFoundException;
 import com.motupa.ticketing.repository.EventRepository;
+import com.motupa.ticketing.request.EventRequest;
+import com.motupa.ticketing.response.EventResponse;
 
 import lombok.RequiredArgsConstructor;
 

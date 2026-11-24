@@ -1,4 +1,4 @@
-package com.motupa.ticketing;
+package com.motupa.ticketing.response;
 
 import java.math.BigDecimal;
 import java.time.Instant;
@@ -12,3 +12,5 @@ public record EventResponse(Long id, String title, String description, String ve
                 return  new EventResponse(e.getId(), e.getTitle(), e.getDescription(), e.getVenue(), e.getStartTime() , e.getCapacity() , e.getPrice());
             }
 }
+
+

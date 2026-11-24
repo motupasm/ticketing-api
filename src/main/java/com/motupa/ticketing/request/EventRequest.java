@@ -1,4 +1,4 @@
-package com.motupa.ticketing;
+package com.motupa.ticketing.request;
 
 import java.math.BigDecimal;
 import java.time.Instant;
